@@ -98,7 +98,7 @@ rq between '2022-01-01 00:00:00' and '2024-07-31 23:59:59'
 """
 
 # 连接数据库并执行查询
-file_path = '/home/user/data/sales_report0731.csv'
+#file_path = '/home/user/data/sales_report0731.csv'
 file_path2 = '/home/user/data/sales_report0731.xlsx'
 
 try:
@@ -120,9 +120,9 @@ except Exception as e:
 
 
 # 导出 DataFrame 到 CSV 文件
-output_path = file_path  # 保存到你的指定地址
-df.to_csv(output_path, index=False)
-print(f"CSV 文件已成功保存到 {output_path}")
+#output_path = file_path  # 保存到你的指定地址
+#df.to_csv(output_path, index=False)
+#print(f"CSV 文件已成功保存到 {output_path}")
 
 output_path2 = file_path2  # 保存到你的指定地址
 df.to_excel(output_path2, index=False, engine='openpyxl')
