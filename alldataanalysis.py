@@ -236,7 +236,7 @@ final_comb_results = pd.concat(all_comb_results, ignore_index=True)
 final_avg_sales = pd.concat(all_avg_sales, ignore_index=True)
 
 # 最后将合并的结果导出到一个单独的文件
-final_file_path = '/home/DataAnalysis/查询结果_最终合并.xlsx'
+final_file_path =/home/user/data/s/查询结果_最终合并.xlsx'
 with pd.ExcelWriter(final_file_path, engine='openpyxl') as writer:
     final_results.to_excel(writer, sheet_name='应收款明细', index=False)
     final_comb_results.to_excel(writer, sheet_name='月平均应收款', index=False)
