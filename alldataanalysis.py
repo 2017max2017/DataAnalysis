@@ -17,8 +17,9 @@ connection_string = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};D
 batch_size = 1000
 
 # 读取公司名称列表
-file_path = '/home/user/data
-/公司名称0727.xlsx'
+file_path = '/home/user/data/公司名称0727.xlsx'  # 文件路径
+
+
 data = pd.read_excel(file_path, sheet_name='Sheet1', dtype={'Company Name': str})
 
 # 假设 data 是你的 DataFrame
